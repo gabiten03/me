@@ -1,6 +1,6 @@
 import './App.css';
 import { Spacer } from '@chakra-ui/react'
-import { useColorMode } from '@chakra-ui/color-mode';
+
 import Header from './components/Header/Header';
 import Contacto from './components/Contacto/Contacto';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -18,7 +18,7 @@ import {
 
 function App() {
 
-  const { colorMode } = useColorMode();
+
   return (
 
     <Router>

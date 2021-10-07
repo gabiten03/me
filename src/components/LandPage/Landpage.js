@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Box } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import { HStack, Flex, Image, useColorModeValue } from '@chakra-ui/react'
 import logo from '../../../src/AvatarMaker.svg'
 
