@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "icon": "Envelope",
+        "title": "IT Specialist",
+        "action": "Cosas que hice",
+        "actionItems": [
+            "UX",
+            "UI",
+            "Web",
+            "Mobile",
+            "Apps",
+            "Logos"
+        ],
+        "toolsTitle": "Design Tools",
+        "toolsItems": [
+            "Balsamiq Mockups",
+            "Figma",
+            "Invision",
+            "Marvel",
+            "Pen & Paper",
+            "Sketch",
+            "Webflow",
+            "Zeplin"
+        ]
+    },
+    {
+        "id": 2,
+        "icon": "Envelope",
+        "title": "IT Specialist",
+        "action": "Cosas que hice",
+        "actionItems": [
+            "UX",
+            "UI",
+            "Web",
+            "Mobile",
+            "Apps",
+            "Logos"
+        ],
+        "toolsTitle": "Design Tools",
+        "toolsItems": [
+            "Balsamiq Mockups",
+            "Figma",
+            "Invision",
+            "Marvel",
+            "Pen & Paper",
+            "Sketch",
+            "Webflow",
+            "Zeplin"
+        ]
+    },
+    {
+        "id": 3,
+        "icon": "Envelope",
+        "title": "IT Specialist",
+        "action": "Cosas que hice",
+        "actionItems": [
+            "UX",
+            "UI",
+            "Web",
+            "Mobile",
+            "Apps",
+            "Logos"
+        ],
+        "toolsTitle": "Design Tools",
+        "toolsItems": [
+            "Balsamiq Mockups",
+            "Figma",
+            "Invision",
+            "Marvel",
+            "Pen & Paper",
+            "Sketch",
+            "Webflow",
+            "Zeplin"
+        ]
+    }
+]

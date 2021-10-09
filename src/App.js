@@ -1,11 +1,12 @@
 import './App.css';
 import { Spacer } from '@chakra-ui/react'
-
 import Header from './components/Header/Header';
-import Contacto from './components/Contacto/Contacto';
+
 import Portfolio from './components/Portfolio/Portfolio';
 import Landpage from './components/LandPage/Landpage';
-import MeHi from './components/MeHi/MeHi';
+import Footer from './components/Footer/Footer';
+import { Divider } from "@chakra-ui/react"
+import Features from './components/Features/Features';
 
 
 import {
@@ -15,37 +16,29 @@ import {
 
 } from "react-router-dom";
 
-
 function App() {
-
-
   return (
-
     <Router>
-
       <Header />
       <Switch>
-
         <Route path="/Contacto">
-          <Contacto />
+
         </Route>
         <Route path="/Portfolio">
-          <Portfolio />
-        </Route>
 
+        </Route>
         <Route path="/">
           <Landpage></Landpage>
+          <Divider />
+          <Portfolio />
+          <Divider />
+          <Features />
+          <Footer />
+
           <Spacer />
-          <MeHi />
         </Route>
       </Switch>
-
     </Router>
-
-
-
-
-
   );
 }
 
