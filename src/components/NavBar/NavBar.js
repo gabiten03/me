@@ -20,12 +20,13 @@ import {
     FaWindowClose,
     FaChevronDown,
 } from 'react-icons/fa';
+
 import Header from '../Header/Header';
 
 
 export default function NavBar() {
     const { isOpen, onToggle } = useDisclosure();
-
+    
     return (
         <Box>
             <Flex

@@ -1,49 +1,46 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, Grid } from '@chakra-ui/react'
 import { HStack, Flex } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
+import { useTranslation } from "react-i18next";
+import "../../../src/translations/i18n";
+
+
 
 function MeHi() {
+    const { t } = useTranslation();
     return (
-        <>
-            <Box position='absolute' marginTop="85" bg={useColorModeValue('blue', 'white')} w="100%" height={400}>
-                <HStack justifyContent="center">
+        <Grid w="100%" >
+            <Box bg={useColorModeValue('blue', 'white')} paddingY={10}>
+                <HStack justifyContent="center" paddingTop={10}>
                     <Flex >
-                        <Text paddingTop={10}
+                        <Text
+
                             color={useColorModeValue('white', 'rgba(10, 10, 10, 0.9)')}
                             fontSize="3xl"
                             fontWeight="extrabold"
-                            align="center">
+                            align="center"
+                            paddingX={5}>
 
-                            Hi, I’m Gabriel. Nice to meet you.
+                            {t("hi")}
 
                         </Text>
-
-
-
-
                     </Flex>
                 </HStack>
-                <HStack justifyContent="center">
-                    <Flex w="40%">
-
+                <HStack justifyContent="center" paddingBottom={30}>
+                    <Flex w="60%">
                         <Text paddingTop={8}
+                            paddingX={5}
                             align="center"
-
-
                             color={useColorModeValue('white', 'rgba(10, 10, 10, 0.9)')}
                             fontSize="2xl"
                         >
                             Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
                         </Text>
-
-
                     </Flex>
                 </HStack>
-
-
             </Box>
-        </>
+        </Grid>
     )
 }
 
