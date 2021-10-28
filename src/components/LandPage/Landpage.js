@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 import React from 'react'
-import { Text, Grid } from '@chakra-ui/react'
+import { Text, Grid, Icon } from '@chakra-ui/react'
 import { HStack, Flex, Image, useColorModeValue } from '@chakra-ui/react'
 import logo from '../../../src/AvatarMaker.svg'
 import { useTranslation } from "react-i18next";
@@ -51,62 +50,6 @@ function Landpage() {
             </HStack>
         </Grid>
     )
-=======
-import {
-    Flex,
-    Container,
-    Heading,
-    Stack,
-    Text,
-    Button,
-    Icon,
-    IconProps,
-} from '@chakra-ui/react';
-
-export default function Landpage() {
-    return (
-        <Container maxW={'5xl'}  >
-            <Stack
-                textAlign={'center'}
-                align={'center'}
-                spacing={{ base: 8, md: 10 }}
-                py={{ base: 20, md: 28 }}>
-
-                <Heading
-
-                    fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-                    lineHeight={'110%'}>
-                    Mas que diseños {' '}
-                    <Text as={'span'} color={'orange.400'}>
-                        , experiencias
-                    </Text>
-                </Heading>
-                <Text color={'gray.500'} maxW={'3xl'}>
-                    Sitios Web, E-Commence, Blogs, Chatbots, Diseños a Medida.
-                </Text>
-                <Stack spacing={6} direction={'row'}>
-                    <Button
-                        rounded={'full'}
-                        px={6}
-                        colorScheme={'orange'}
-                        bg={'orange.400'}
-                        _hover={{ bg: 'orange.500' }}>
-                        Get started
-                    </Button>
-                    <Button rounded={'full'} px={6}>
-                        Learn more
-                    </Button>
-                </Stack>
-                <Flex w={'full'}>
-                    <Illustration
-                        height={{ sm: '24rem', lg: '28rem' }}
-                        mt={{ base: 12, sm: 16 }}
-                    />
-                </Flex>
-            </Stack>
-        </ Container>
-    );
->>>>>>> d28bb9792e3b7b5e4518bb98480c9fc7c4d16bf8
 }
 
 export const Illustration = (props: IconProps) => {
@@ -924,3 +867,5 @@ export const Illustration = (props: IconProps) => {
         </Icon>
     );
 };
+
+export default Landpage
