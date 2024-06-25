@@ -29,10 +29,7 @@ function App() {
         <Route path="/">
           <Landpage></Landpage>
           <MeHi />
-          <CardsContainer />
-          <Portfolio />
-          <Spacer />
-          <PortfolioItem />
+
         </Route>
       </Switch>
     </Router>
