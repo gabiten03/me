@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Text, Grid } from '@chakra-ui/react'
 import { HStack, Flex } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
@@ -9,6 +9,11 @@ import "../../../src/translations/i18n";
 
 function MeHi() {
     const { t } = useTranslation();
+
+    useEffect(()=>{
+
+        document.title = t('pageTitle');
+    }, [t]);
     return (
         <Grid w="100%" >
             <Box bg={useColorModeValue('blue', 'white')} paddingY={10}>
@@ -35,7 +40,7 @@ function MeHi() {
                             color={useColorModeValue('white', 'rgba(10, 10, 10, 0.9)')}
                             fontSize="2xl"
                         >
-                            Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                           {t("myOverview")}
                         </Text>
                     </Flex>
                 </HStack>
