@@ -25,7 +25,11 @@ function MeHi() {
                             fontSize="3xl"
                             fontWeight="extrabold"
                             align="center"
-                            paddingX={5}>
+                            paddingX={5}
+                            fontFamily="Raleway"
+                            
+                            >
+                                
 
                             {t("hi")}
 
@@ -39,6 +43,7 @@ function MeHi() {
                             align="center"
                             color={useColorModeValue('white', 'rgba(10, 10, 10, 0.9)')}
                             fontSize="2xl"
+                             fontFamily="Open Sans"
                         >
                            {t("myOverview")}
                         </Text>
